@@ -20,7 +20,7 @@ const events = fs.readdirSync("./src/events");
 
 events.forEach((event) => {
     const eventFile = require(`./src/events/${event}`);
-    if (eventFile.once) {
+    if (eventFile.oneTime) {
         client.once(eventFile.event, (...args) => eventFile.run(client, mongo.db, ...args));
     } else {
         client.on(eventFile.event, (...args) => eventFile.run(client, mongo.db, ...args));

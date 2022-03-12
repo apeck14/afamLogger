@@ -259,9 +259,6 @@ module.exports = {
                             const tY = 90;
                             context.fillText(match.type, tX, tY);
 
-                            //add middle line
-                            context.fillRect(canvas.width / 2 - 1, 0, 3, canvas.height);
-
                             //add underline
                             context.fillRect(tX, tY + 10, context.measureText(match.type).width, 8);
 

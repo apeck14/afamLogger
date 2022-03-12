@@ -1,0 +1,19 @@
+{
+  "name": "afamlogger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^0.3.0",
+    "axios": "^0.26.1",
+    "canvas": "^2.9.0",
+    "discord.js": "^13.6.0",
+    "mongodb": "^4.4.1",
+    "node-cron": "^3.0.0"
+  }
+}

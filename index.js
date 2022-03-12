@@ -14,8 +14,6 @@ const client = new Client({
     ]
 });
 
-client.commands = new Collection();
-
 const events = fs.readdirSync("./src/events");
 
 events.forEach((event) => {

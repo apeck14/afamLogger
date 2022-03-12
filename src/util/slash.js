@@ -1,4 +1,4 @@
-const { guildId } = require("../../config");
+const { guildId, clientId } = require("../../config");
 
 const slash = {
     register: async (clientId, commands) => {

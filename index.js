@@ -37,7 +37,7 @@ for (const job of jobs) { //start all cron jobs
         const newJob = schedule(jobFile.expression, () => jobFile.run(client, mongo.db));
         newJob.start();
     } catch (e) {
-        console.log(e)
+        console.log(e);
         continue;
     }
 }

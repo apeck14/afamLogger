@@ -59,6 +59,7 @@ module.exports = {
                         else {
                             //special 1v1
                             const specialGameModes = [
+                                { name: 'Overtime_Ladder', str: 'Sudden Death', iconPath: 'sudden-death' },
                                 { name: 'TripleElixir_Ladder', str: 'Triple Elixir', iconPath: 'triple-elixir' }
                             ]
 

@@ -59,8 +59,9 @@ module.exports = {
                         else {
                             //special 1v1
                             const specialGameModes = [
-                                { name: 'Overtime_Ladder', str: 'Sudden Death', iconPath: 'sudden-death' },
-                                { name: 'TripleElixir_Ladder', str: 'Triple Elixir', iconPath: 'triple-elixir' }
+                                { name: 'RampUpElixir_Ladder', str: '1v1 Ramp Up', iconPath: 'ramp-up' },
+                                { name: 'Overtime_Ladder', str: '1v1 Sudden Death', iconPath: 'sudden-death' },
+                                { name: 'TripleElixir_Ladder', str: '1v1 Triple Elixir', iconPath: 'triple-elixir' }
                             ]
 
                             const modeExists = specialGameModes.find(m => m.name === b.type);

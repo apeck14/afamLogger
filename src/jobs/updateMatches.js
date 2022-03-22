@@ -64,7 +64,7 @@ module.exports = {
                                 { name: 'TripleElixir_Ladder', str: '1v1 Triple Elixir', iconPath: 'triple-elixir' }
                             ]
 
-                            const modeExists = specialGameModes.find(m => m.name === b.type);
+                            const modeExists = specialGameModes.find(m => m.name === b.gameMode.name);
 
                             if (modeExists) {
                                 match = {

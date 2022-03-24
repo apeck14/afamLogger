@@ -22,7 +22,7 @@ module.exports = {
             for (const m of memberList) {
                 const log = await getBattleLog(m.tag);
 
-                for (let i = log.length; i >= 0; i--) {
+                for (let i = log.length - 1; i >= 0; i--) {
                     const b = log[i];
                     console.log(b.battleTime)
                     const canvas = createCanvas(overlay.width, overlay.height);

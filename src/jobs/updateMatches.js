@@ -24,7 +24,6 @@ module.exports = {
 
                 for (let i = log.length - 1; i >= 0; i--) {
                     const b = log[i];
-                    console.log(b.battleTime)
                     const canvas = createCanvas(overlay.width, overlay.height);
                     const context = canvas.getContext('2d');
                     context.drawImage(overlay, 0, 0, canvas.width, canvas.height);

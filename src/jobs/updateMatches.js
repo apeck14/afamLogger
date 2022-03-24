@@ -4,7 +4,7 @@ const { LOGS_CHANNEL_ID } = require("../../config");
 const { parseDate, relativeDateStr, isWinner } = require("../util/functions");
 
 module.exports = {
-    expression: '*/4 * * * *', //every 4 mins
+    expression: '*/2 * * * *', //every 4 mins
     run: async (client, db) => {
         console.log('Updating matches...');
 
@@ -22,7 +22,9 @@ module.exports = {
             for (const m of memberList) {
                 const log = await getBattleLog(m.tag);
 
-                for (const b of log) {
+                for (let i = log.length; i >= 0; i--) {
+                    const b = log[i];
+                    console.log(b.battleTime)
                     const canvas = createCanvas(overlay.width, overlay.height);
                     const context = canvas.getContext('2d');
                     context.drawImage(overlay, 0, 0, canvas.width, canvas.height);

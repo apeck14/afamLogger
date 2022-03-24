@@ -4,7 +4,7 @@ const { LOGS_CHANNEL_ID } = require("../../config");
 const { parseDate, relativeDateStr, isWinner } = require("../util/functions");
 
 module.exports = {
-    expression: '*/2 * * * *', //every 4 mins
+    expression: '*/4 * * * *', //every 4 mins
     run: async (client, db) => {
         console.log('Updating matches...');
 

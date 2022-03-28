@@ -44,14 +44,14 @@ module.exports = {
                                 team: {
                                     name: player.name,
                                     clanName: player.clan.name,
-                                    trophies: player.startingTrophies,
+                                    trophies: player.startingTrophies || 0,
                                     cards: player.cards,
                                     crowns: player.crowns
                                 },
                                 opponent: {
                                     name: opponent.name,
                                     clanName: opponent.clan.name,
-                                    trophies: opponent.startingTrophies,
+                                    trophies: opponent.startingTrophies || 0,
                                     cards: opponent.cards,
                                     crowns: opponent.crowns
                                 },
@@ -62,7 +62,8 @@ module.exports = {
                             const specialGameModes = [
                                 { name: 'RampUpElixir_Ladder', str: '1v1 Ramp Up', iconPath: 'ramp-up' },
                                 { name: 'Overtime_Ladder', str: '1v1 Sudden Death', iconPath: 'sudden-death' },
-                                { name: 'TripleElixir_Ladder', str: '1v1 Triple Elixir', iconPath: 'triple-elixir' }
+                                { name: 'TripleElixir_Ladder', str: '1v1 Triple Elixir', iconPath: 'triple-elixir' },
+                                { name: 'Touchdown', str: '1v1 Touchdown', iconPath: 'touchdown' }
                             ]
 
                             const modeExists = specialGameModes.find(m => m.name === b.gameMode.name);
@@ -102,14 +103,14 @@ module.exports = {
                             team: {
                                 name: player.name,
                                 clanName: player.clan.name,
-                                trophies: player.startingTrophies,
+                                trophies: player.startingTrophies || 0,
                                 cards: player.cards,
                                 crowns: player.crowns
                             },
                             opponent: {
                                 name: opponent.name,
                                 clanName: opponent.clan.name,
-                                trophies: opponent.startingTrophies,
+                                trophies: opponent.startingTrophies || 0,
                                 cards: opponent.cards,
                                 crowns: opponent.crowns
                             },

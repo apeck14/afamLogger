@@ -93,7 +93,7 @@ module.exports = {
 
                         }
                     }
-                    else if (b.type === 'riverRaceDuel') { //duel
+                    else if (b.type === 'riverRaceDuel' || b.type === 'riverRaceDuelColosseum') { //duel
                         match = {
                             type: '1v1 Duel',
                             iconPath: 'cw-duel-1v1',

@@ -78,14 +78,14 @@ module.exports = {
                                     team: {
                                         name: player.name,
                                         clanName: player.clan.name,
-                                        trophies: player.startingTrophies,
+                                        trophies: player.startingTrophies || 0,
                                         cards: player.cards,
                                         crowns: player.crowns
                                     },
                                     opponent: {
                                         name: opponent.name,
                                         clanName: opponent.clan.name,
-                                        trophies: opponent.startingTrophies,
+                                        trophies: opponent.startingTrophies || 0,
                                         cards: opponent.cards,
                                         crowns: opponent.crowns
                                     },

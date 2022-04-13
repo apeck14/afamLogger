@@ -66,6 +66,7 @@ module.exports = {
 								{ name: "TripleElixir_Ladder", str: "1v1 Triple Elixir", iconPath: "triple-elixir" },
 								{ name: "Touchdown", str: "1v1 Touchdown", iconPath: "touchdown" },
 								{ name: "DoubleElixir_Ladder", str: "1v1 Double Elixir", iconPath: "double-elixir" },
+								{ name: "Rage_Ladder", str: "1v1 Rage", iconPath: "rage" },
 							]
 
 							const modeExists = specialGameModes.find((m) => m.name === b.gameMode.name)

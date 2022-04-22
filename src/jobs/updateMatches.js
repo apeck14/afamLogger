@@ -142,7 +142,8 @@ module.exports = {
 					//check if from our clan
 					if (player.clan.tag !== clan.tag) continue
 					//check if already in database
-					if (await afamLogs.findOne({ "team.tag": m.tag, timestamp: b.battleTime })) continue
+					const matchFound = await afamLogs.findOne({ "team.tag": m.tag, timestamp: b.battleTime })
+					if (matchFound) continue
 
 					matchQueue.push(match)
 				}

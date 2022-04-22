@@ -1,5 +1,4 @@
 const { MongoClient } = require("mongodb")
-const { URI } = require("../../config")
 
 class MongoBot {
 	constructor() {

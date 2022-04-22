@@ -9,7 +9,7 @@ module.exports = {
 	run: async (client, db) => {
 		console.log("Updating matches...")
 
-		const afamLogs = db.collection("AFam Logs Test")
+		const afamLogs = db.collection("AFam Logs")
 
 		//get member list
 		//loop through all members

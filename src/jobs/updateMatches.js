@@ -14,7 +14,6 @@ module.exports = {
 		//get member list
 		//loop through all members
 		//loop through members of each member
-		await afamLogs.deleteMany({})
 
 		const clan = await getClan("9U82JJ0Y").catch(console.log)
 		if (!clan) return

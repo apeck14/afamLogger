@@ -7,4 +7,5 @@ module.exports = [
 	{ name: "Rage_Ladder", str: "1v1 Rage", iconPath: "rage" },
 	{ name: "7xElixir_Ladder", str: "1v1 7x Elixir", iconPath: "infinite-elixir" },
 	{ name: "ElixirCollectorCapture_Ladder", str: "1v1 Elixir Capture", iconPath: "elixir-capture" },
+	{ name: "Heist_Ladder", str: "1v1 Heist", iconPath: "heist" },
 ]

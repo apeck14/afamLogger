@@ -5,7 +5,7 @@ const specialGameModes = require("../static/specialGamemodes")
 const createMatchImg = require("../util/createMatchImgs")
 
 module.exports = {
-	expression: "*/5 * * * *", //every 5 mins
+	expression: "*/4 * * * *", //every 5 mins
 	run: async (client, db) => {
 		console.log("Updating matches...")
 
